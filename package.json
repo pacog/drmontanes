@@ -1,0 +1,23 @@
+{
+  "name": "drmontanes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pacog/drmontanes.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pacog/drmontanes/issues"
+  },
+  "homepage": "https://github.com/pacog/drmontanes#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-server-livereload": "^1.9.2"
+  }
+}
