@@ -18,6 +18,8 @@
   "homepage": "https://github.com/pacog/drmontanes#readme",
   "devDependencies": {
     "gulp": "^3.9.1",
+    "gulp-inline-css": "^3.1.0",
+    "gulp-sass": "^3.1.0",
     "gulp-server-livereload": "^1.9.2"
   }
 }
