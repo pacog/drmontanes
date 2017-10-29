@@ -1,0 +1,24 @@
+.landing-nav {
+    background: $blue;
+    position: sticky;
+    top: 0;
+}
+    .landing-nav-content {
+        max-width: $content-width;
+        margin: 0 auto;
+        @include flexbox;
+        @include justify-content(space-between);
+        padding: $g-l;
+    }
+        .landing-nav-item a {
+            color: white;
+            text-decoration: none;
+            @include titles-font;
+            text-transform: uppercase;
+            font-size: 12px;
+            margin-top: 5*$g-l;
+            letter-spacing: 3px;
+            &:hover {
+                text-decoration: underline;
+            }
+        }

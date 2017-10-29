@@ -1,0 +1,9 @@
+body {
+    background: white;
+    @include main-font;
+}
+
+.logo {
+    background: url("assets/logo_monti.svg") no-repeat center center;
+    background-size: contain;
+}
