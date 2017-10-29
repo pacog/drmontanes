@@ -1,13 +1,4 @@
 @import "reset";
+@import "fonts";
 
-body {
-    background: white;
-}
-
-.logo {
-    width: 100px;
-    height: 120px;
-    background: url("assets/logo_monti.svg") no-repeat center center;
-    background-size: contain;
-    border: 1px solid blue;
-}
+@import "landing";

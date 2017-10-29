@@ -1,8 +1,8 @@
 const gulp = require('gulp');
 const server = require('gulp-server-livereload');
 const sass = require('gulp-sass');
-const inlineCss = require('gulp-inline-css');
 const gulpsync = require('gulp-sync')(gulp);
+const inlinesource = require('gulp-inline-source');
 
 gulp.task('webserver', function() {
     gulp.src('dist')
@@ -31,10 +31,10 @@ gulp.task('watch', function () {
 });
 
 gulp.task('inject', function() {
-    return gulp.src('./app/*.html')
-        .pipe(inlineCss())
-        .pipe(gulp.dest('./dist/'));
+    const target = gulp.src('./app/*.html');
+    return target
+        .pipe(inlinesource())
+        .pipe(gulp.dest('./dist'));
 });
-
 
 gulp.task('default', gulpsync.sync(['sass', 'copyAssets', 'inject', 'webserver', 'watch']));
