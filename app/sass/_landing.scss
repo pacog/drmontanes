@@ -81,17 +81,6 @@
     line-height: 1.2;
 }
 
-@mixin aspect-ratio($width, $height) {
-  position: relative;
-  &:before {
-    display: block;
-    content: "";
-    width: 100%;
-    padding-top: ($height / $width) * 100%;
-  }
-}
-
-
 .link-with-photo-list {
     @include flexbox;
     @include align-items(center);
@@ -115,12 +104,22 @@
         @include flexbox;
         @include justify-content(center);
         @include align-items(center);
-        // height: 180px;
-        background: $blue;
         border: 10px solid white;
         color: white;
         text-decoration: none;
-        text-transform: uppercase;
+        @include titles-font;
+        font-size: 22px;
+
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-color: $blue;
+        background-blend-mode: luminosity;
+        background-image: url("assets/img/contact.jpg");
+
+        &:hover {
+            background-blend-mode: overlay;
+        }
     }
 
 .landing-section-content-curriculum {
@@ -148,6 +147,51 @@
         margin-bottom: 2*$g-l;
     }
 
+.landing-section-content-curriculum-photo {
+    margin-bottom: 2*$g-l;
+    width: 100%;
+    @include aspect-ratio(1, 1);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: $blue;
+    background-blend-mode: luminosity;
+}
+
+.landing-section-content-curriculum-photo-1 {
+    background-image: url("assets/img/cv1.jpg");
+}
+.landing-section-content-curriculum-photo-2 {
+    background-image: url("assets/img/cv2.jpg");
+}
+.landing-section-contact {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: $blue;
+    background-blend-mode: luminosity;
+    background-image: url("assets/img/contact.jpg");
+    position: relative;
+    .landing-section-title {
+        color: white;
+    }
+    .landing-section-content {
+        position: relative;
+        z-index: 2;
+    }
+
+    &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: $blue;
+        opacity: 0.5;
+    }
+}
 .landing-section-content-contacto {
     min-height: 70vh;
     @include flexbox;
