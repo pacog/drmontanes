@@ -2,26 +2,32 @@
     background: $blue;
     position: sticky;
     top: 0;
+    z-index: 1;
 }
     .landing-nav-content {
         max-width: $content-width;
         margin: 0 auto;
         @include flexbox;
         @include justify-content(space-between);
-        padding: $g-l;
+        padding: 0 $g-l;
     }
         .landing-nav-item {
             padding: 0 $g-m;
+            @include flex(1);
         }
         .landing-nav-item a {
+            text-align: center;
             color: white;
             text-decoration: none;
             @include titles-font;
             text-transform: uppercase;
             font-size: 12px;
-            margin-top: 5*$g-l;
             letter-spacing: 3px;
+            height: 2*$g-l;
+            line-height: 2*$g-l;
+            display: block;
             &:hover {
-                text-decoration: underline;
+                background: white;
+                color: $blue;
             }
         }

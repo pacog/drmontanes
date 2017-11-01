@@ -53,9 +53,9 @@
 .requisito-small {
     text-align: center;
     margin: 0 auto;
-    max-width: 130px;
+    max-width: 150px;
     line-height: 1.4;
-    font-size: 16px;
+    font-size: 20px;
 }
 .requisito-big {
     text-align: center;
@@ -67,7 +67,7 @@
     margin-bottom: 3*$g-l;
 }
 .requisito-highlight {
-    font-size: 30px;
+    font-size: 40px;
     line-height: 1;
     display: block;
     margin-bottom: $g-m;
@@ -121,4 +121,60 @@
         color: white;
         text-decoration: none;
         text-transform: uppercase;
+    }
+
+.landing-section-content-curriculum {
+    @include flexbox;
+
+}
+    .landing-section-content-curriculum-photos {
+        @include flex(1);
+        margin-right: $g-l;
+    }
+    .landing-section-content-curriculum-text {
+        @include flex(1);
+        margin-left: $g-l;
+        font-size: 20px;
+        line-height: 1.1;
+    }
+    .curriculum-entry {
+        margin-bottom: $g-l;
+    }
+        .curriculum-entry-date {
+            font-size: 22px;
+        }
+    .curriculum-entry-big {
+        font-size: 28px;
+        margin-bottom: 2*$g-l;
+    }
+
+.landing-section-content-contacto {
+    min-height: 70vh;
+    @include flexbox;
+    @include flex-direction(column);
+    @include align-items(center);
+    @include justify-content(center);
+}
+    .contacto-text {
+        max-width: 450px;
+        margin: 0 auto;
+        font-size: 40px;
+        line-height: 1.1;
+        text-align: center;
+        a {
+            color: white;
+            text-decoration: none;
+            &:hover {
+                // text-decoration: underline;
+                background: white;
+                color: $blue;
+            }
+        }
+    }
+
+    .contacto-decorator {
+        height: 2px;
+        width: 200px;
+        margin: 2*$g-l auto;
+        background: $grey;
     }

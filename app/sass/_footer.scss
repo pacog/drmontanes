@@ -1,4 +1,32 @@
-.footer-logo {
-    width: 30px;
-    height: 15px;
+.footer {
+    @include flexbox;
+    @include flex-direction(column);
+    @include align-items(center);
+    @include justify-content(center);
+    background: white;
+    padding: 3*$g-l;
 }
+
+.footer-logo {
+    width: 120px;
+    height: 40px;
+}
+.footer-links {
+    @include flexbox;
+    margin-top: 2*$g-l;
+}
+    .footer-link {
+        margin-right: $g-l;
+        &:last-child {
+            margin-right: 0;
+        }
+        a {
+            color: $blue;
+            text-decoration: none;
+            font-size: 20px;
+            &:hover {
+                background: $blue;
+                color: white;
+            }
+        }
+    }
