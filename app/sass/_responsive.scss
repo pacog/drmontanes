@@ -1,0 +1,92 @@
+@media (max-width: 800px) {
+    .no-mobile {
+        display: none;
+    }
+
+    .hero-logo {
+        width: 100%;
+    }
+    .hero-title {
+        width: 100%;
+        font-size: 18px;
+    }
+    .hero-subtitle {
+        font-size: 12px;
+    }
+    .landing-nav-content {
+        padding: 0 $g-s;
+    }
+    .landing-nav-item {
+        a {
+            font-size: 12px;
+            letter-spacing: 1px;
+        }
+    }
+
+    .recital-columns {
+        display: block;
+    }
+    .recital-column {
+        margin: 0 auto;
+
+        &:last-child {
+            margin-top: 3*$g-l;
+        }
+    }
+
+    .requisito-big {
+        font-size: 50px;
+    }
+
+    .landing-section-escenarios {
+        text-align: center;
+        font-size: 20px;
+        line-height: 1.2;
+        p {
+            margin-bottom: $g-m;
+        }
+    }
+
+    .link-with-photo-list {
+        display: block;
+    }
+    .link-with-photo-container {
+        margin-right: 0;
+        margin-bottom: $g-l;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .landing-section-content-curriculum-text {
+        margin-left: 0;
+        font-size: 18px;
+        line-height: 1.2;
+    }
+        .curriculum-entry-date {
+            font-size: 20px;
+        }
+    .curriculum-entry-big {
+        font-size: 22px;
+    }
+
+    .contacto-text {
+        font-size: 22px;
+        line-height: 1.2;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .footer-links {
+        display: block;
+    }
+    .footer-link {
+        margin-right: 0;
+        margin-bottom: $g-m;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

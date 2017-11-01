@@ -10,7 +10,7 @@ $hero-logo-width: 370px;
 }
     .hero-logo {
         width: $hero-logo-width;
-        height: 147px;
+        @include aspect-ratio(817, 327);
     }
     .hero-title {
         padding: 0 $g-l;
@@ -25,6 +25,7 @@ $hero-logo-width: 370px;
         width: $hero-logo-width;
     }
     .hero-subtitle {
+        text-align: center;
         @include titles-font;
         text-transform: uppercase;
         color: rgba($grey, 0.8);
