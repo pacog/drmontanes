@@ -6,16 +6,16 @@
     font-style: normal;
 }
 
-@font-face {
-    font-family: 'butler_stencilregular';
-    src: url('assets/fonts/butler_regular_stencil.woff2') format('woff2'),
-         url('assets/fonts/butler_regular_stencil.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
+// @font-face {
+//     font-family: 'butler_stencilregular';
+//     src: url('assets/fonts/butler_regular_stencil.woff2') format('woff2'),
+//          url('assets/fonts/butler_regular_stencil.woff') format('woff');
+//     font-weight: normal;
+//     font-style: normal;
+// }
 
 @mixin main-font {
-    font-family: 'butler_stencilregular', serif;
+    font-family: 'Crimson Text', serif;
 }
 @mixin titles-font {
     font-family: 'sumptuouslight', serif;

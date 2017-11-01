@@ -2,4 +2,4 @@
 
 npm install
 
-gulp webserver
+gulp

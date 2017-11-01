@@ -10,6 +10,9 @@
         @include justify-content(space-between);
         padding: $g-l;
     }
+        .landing-nav-item {
+            padding: 0 $g-m;
+        }
         .landing-nav-item a {
             color: white;
             text-decoration: none;
