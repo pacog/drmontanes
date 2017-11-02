@@ -20,6 +20,7 @@ $key-close-size-width: $key-middle-size-width * 2;
         background-repeat: no-repeat;
         background-position: center center;
         background-size: contain;
+        transition: transform 0.1s ease-in-out;
     }
     .key-grey-1 {
         background-image: url('assets/decoration_grey_1.svg');
@@ -34,13 +35,13 @@ $key-close-size-width: $key-middle-size-width * 2;
     .key-close {
         width: $key-close-size-width;
         height: $key-close-size-width / $key-aspect-ratio;
-        opacity: 0.5;
+        opacity: 0.2;
     }
     .key-middle {
-        opacity: 0.25;
+        opacity: 0.15;
     }
     .key-far {
         width: $key-far-size-width;
         height: $key-far-size-width / $key-aspect-ratio;
-        opacity: 0.15;
+        opacity: 0.1;
     }
