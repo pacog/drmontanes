@@ -3,6 +3,7 @@ const server = require('gulp-server-livereload');
 const sass = require('gulp-sass');
 const gulpsync = require('gulp-sync')(gulp);
 const inlinesource = require('gulp-inline-source');
+const ghPages = require('gulp-gh-pages');
 
 gulp.task('webserver', function() {
     gulp.src('dist')
@@ -36,6 +37,13 @@ gulp.task('inject', function() {
     return target
         .pipe(inlinesource())
         .pipe(gulp.dest('./dist'));
+});
+
+gulp.task('deploy', gulpsync.sync(['sass', 'copyAssets', 'inject', 'gh-pages-upload']));
+
+gulp.task('gh-pages-upload', function() {
+  return gulp.src('./dist/**/*')
+    .pipe(ghPages());
 });
 
 gulp.task('default', gulpsync.sync(['sass', 'copyAssets', 'inject', 'webserver', 'watch']));
