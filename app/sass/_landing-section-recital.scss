@@ -1,0 +1,15 @@
+.recital-columns {
+    @include flexbox;
+    @include justify-content(space-between);
+    max-width: 400px;
+    margin: 0 auto;
+}
+    .recital-column {
+        text-align: center;
+        max-width: 120px;
+        line-height: 1.4;
+        font-size: 20px;
+    }
+        .recital-column-title {
+            margin-bottom: 2*$g-l;
+        }

@@ -1,0 +1,25 @@
+.requisito-small {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 150px;
+    line-height: 1.4;
+    font-size: 20px;
+}
+.requisito-big {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 300px;
+    line-height: 1;
+    font-size: 67px;
+    margin-top: 2*$g-l;
+    margin-bottom: 3*$g-l;
+}
+.requisito-highlight {
+    font-size: 40px;
+    line-height: 1;
+    display: block;
+    margin-bottom: $g-m;
+}
+.requisito-aside {
+    margin-top: 4*$g-l;
+}

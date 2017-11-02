@@ -27,6 +27,7 @@ gulp.task('copyAssets', function() {
 gulp.task('watch', function () {
     gulp.watch('./app/sass/**/*.scss', gulpsync.sync(['sass', 'inject']));
     gulp.watch('./app/*.html', ['inject']);
+    gulp.watch('./app/js/**/*.js', ['inject']);
     gulp.watch('./app/assets/**/*.*', ['copyAssets']);
 });
 
