@@ -13,7 +13,7 @@
         line-height: 1.1;
     }
     .curriculum-entry {
-        margin-bottom: $g-l;
+        margin-bottom: 2*$g-l;
     }
         .curriculum-entry-date {
             font-size: 22px;
@@ -21,6 +21,10 @@
     .curriculum-entry-big {
         font-size: 28px;
         margin-bottom: 2*$g-l;
+    }
+    .curriculum-entry-medium {
+        font-size: 20px;
+        margin-bottom: $g-l;
     }
 
 .landing-section-content-curriculum-photo {
