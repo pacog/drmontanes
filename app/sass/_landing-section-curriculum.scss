@@ -1,34 +1,33 @@
 .landing-section-content-curriculum {
     @include flexbox;
-
 }
-    .landing-section-content-curriculum-photos {
-        @include flex(1);
-        margin-right: $g-l;
-    }
-    .landing-section-content-curriculum-text {
-        @include flex(1);
-        margin-left: $g-l;
-        font-size: 20px;
-        line-height: 1.1;
-    }
-    .curriculum-entry {
-        margin-bottom: 2*$g-l;
-    }
-        .curriculum-entry-date {
-            font-size: 22px;
-        }
-    .curriculum-entry-big {
-        font-size: 28px;
-        margin-bottom: 2*$g-l;
-    }
-    .curriculum-entry-medium {
-        font-size: 20px;
-        margin-bottom: $g-l;
-    }
+.landing-section-content-curriculum-photos {
+    @include flex(1);
+    margin-right: $g-l;
+}
+.landing-section-content-curriculum-text {
+    @include flex(1);
+    margin-left: $g-l;
+    font-size: 20px;
+    line-height: 1.1;
+}
+.curriculum-entry {
+    margin-bottom: 2 * $g-l;
+}
+.curriculum-entry-date {
+    font-size: 22px;
+}
+.curriculum-entry-big {
+    font-size: 28px;
+    margin-bottom: 2 * $g-l;
+}
+.curriculum-entry-medium {
+    font-size: 20px;
+    margin-bottom: $g-l;
+}
 
 .landing-section-content-curriculum-photo {
-    margin-bottom: 2*$g-l;
+    margin-bottom: 2 * $g-l;
     width: 100%;
     @include aspect-ratio(1, 1);
     background-size: cover;
@@ -43,4 +42,14 @@
 }
 .landing-section-content-curriculum-photo-2 {
     background-image: url("assets/img/cv2.jpg");
+}
+
+.curriculum-entry a {
+    color: white;
+    text-decoration: none;
+    &:hover {
+        // text-decoration: underline;
+        background: white;
+        color: $blue;
+    }
 }
