@@ -15,7 +15,7 @@
     margin-bottom: 2 * $g-l;
 }
 .curriculum-entry-date {
-    font-size: 22px;
+    font-size: 36px;
 }
 .curriculum-entry-big {
     font-size: 28px;
@@ -46,7 +46,7 @@
 
 .curriculum-entry a {
     color: white;
-    text-decoration: none;
+    text-decoration: underline;
     &:hover {
         // text-decoration: underline;
         background: white;
