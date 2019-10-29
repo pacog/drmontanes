@@ -15,7 +15,7 @@
     }
 
     &:before {
-        content: '';
+        content: "";
         display: block;
         position: absolute;
         top: 0;
@@ -33,26 +33,38 @@
     @include align-items(center);
     @include justify-content(center);
 }
-    .contacto-text {
-        max-width: 450px;
-        margin: 0 auto;
-        font-size: 40px;
-        line-height: 1.1;
-        text-align: center;
-        a {
-            color: white;
-            text-decoration: none;
-            &:hover {
-                // text-decoration: underline;
-                background: white;
-                color: $blue;
-            }
+.contacto-text {
+    max-width: 450px;
+    margin: 0 auto;
+    font-size: 40px;
+    line-height: 1.1;
+    text-align: center;
+    a {
+        color: white;
+        text-decoration: none;
+        &:hover {
+            // text-decoration: underline;
+            background: white;
+            color: $blue;
         }
     }
-
-    .contacto-decorator {
-        height: 2px;
-        width: 200px;
-        margin: 2*$g-l auto;
-        background: $grey;
+}
+.contacto-link {
+    margin-top: $g-m;
+    a {
+        color: white;
+        text-decoration: none;
+        &:hover {
+            // text-decoration: underline;
+            background: white;
+            color: $blue;
+        }
     }
+}
+
+.contacto-decorator {
+    height: 2px;
+    width: 200px;
+    margin: 2 * $g-l auto;
+    background: $grey;
+}
